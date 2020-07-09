@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Surface Calculations</title>
+  </head>
+
+  <body style="background: url(img/cream.png) repeat 0 0;">
+
+    <!-- container -->
+    <div class="container p-t-1" style="background: url(img/cream.png) repeat 0 0;">
+
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+          <h1 class="text-xs-center">Surface Calculations</h1>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+
+      <div class="row p-t-3">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-xs-center">General Info</h1>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+
+      <div class="row p-t-3">
+        <div class="col-sm-5">
+        </div>
+        <div class="col-sm-2">
+          <p class="text-xs-center">Job Number</p>
+          <input type="text" class="form-control" id="jobNumber" value="0">
+        </div>
+        <div class="col-sm-5">
+        </div>
+      </div>
+
+      <div class="row p-t-2">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-2">
+          <p class="text-xs-center">Lens Type</p>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="lensType" id="lensType" value="st" checked>
+              ST
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="lensType" id="lensType" value="stt">
+              STT
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="lensType" id="lensType" value="sv">
+              SV
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="lensType" id="lensType" value="pcsv">
+              PC-SV
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Segment Width</p>
+            <input type="number" class="form-control" id="segmentWidth" value="28">
+          </div>
+          <div class="col-sm-4">
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-t-1">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">DPD</p>
+            <input type="number" class="form-control" id="dpd" value="63">
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">NPD</p>
+            <input type="number" class="form-control" id="npd" value="60">
+          </div>
+          <div class="col-sm-4">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">A Size</p>
+            <input type="number" class="form-control" id="aSize" value="48">
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">DBL</p>
+            <input type="number" class="form-control" id="dbl" value="20">
+          </div>
+          <div class="col-sm-4">
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-t-3">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-xs-center">Right Lens</h1>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+
+      <div class="row p-t-3">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Sphere</p>
+            <input type="number" class="form-control" id="rightSphere" value="-1.00">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Cylinder</p>
+            <input type="number" class="form-control" id="rightCylinder" value="-1.00">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Axis</p>
+            <input type="number" class="form-control" id="rightAxis" value="180">
+          </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-5">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Add</p>
+            <input type="number" class="form-control" id="rightAdd" value="1.00">
+          </div>
+        </div>
+        <div class="col-sm-5">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-1">
+          <div class="form-check p-t-2">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="rightVerticalPrismRadio" id="verticalPrismRadio" value="in" checked>
+              Up
+                <input class="form-check-input" type="radio" name="rightVerticalPrismRadio" id="verticalPrismRadio" value="down">
+                Down
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Vertical Prism</p>
+            <input type="number" class="form-control" id="rightVerticalPrism" value="0.25">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-1">
+          <div class="form-check p-t-2">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="rightHorizontalPrismRadio" id="rightHorizontalPrismRadio" value="in" checked>
+              In
+                <input class="form-check-input" type="radio" name="rightHorizontalPrismRadio" id="rightHorizontalPrismRadio" value="out">
+                Outt
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Horizontal Prism</p>
+            <input type="number" class="form-control" id="rightHorizontalPrism" value="0.25">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+      </div>
+
+      <div class="row p-t-3">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-xs-center">Left Lens</h1>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+
+      <div class="row p-t-3">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Sphere</p>
+            <input type="number" class="form-control" id="leftSphere" value="-1.00">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Cylinder</p>
+            <input type="number" class="form-control" id="leftCylinder" value="-1.00">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Axis</p>
+            <input type="number" class="form-control" id="leftAxis" value="180">
+          </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-5">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Add</p>
+            <input type="number" class="form-control" id="leftAdd" value="1.00">
+          </div>
+        </div>
+        <div class="col-sm-5">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-1">
+          <div class="form-check p-t-2">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="leftVerticalPrismRadio" id="leftVerticalPrismRadio" value="in" checked>
+              Up
+                <input class="form-check-input" type="radio" name="leftVerticalPrismRadio" id="leftVerticalPrismRadio" value="down">
+                Down
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Vertical Prism</p>
+            <input type="number" class="form-control" id="leftVerticalPrism" value="0.25">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-1">
+          <div class="form-check p-t-2">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="leftHorizontalPrismRadio" id="leftHorizontalPrismRadio" value="in" checked>
+              In
+                <input class="form-check-input" type="radio" name="leftHorizontalPrismRadio" id="leftHorizontalPrismRadio" value="out">
+                Outt
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <p class="text-xs-center">Horizontal Prism</p>
+            <input type="number" class="form-control" id="leftHorizontalPrism" value="0.25">
+          </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+      </div>
+
+      <div class="row p-t-3 p-b-1">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-info btn-lg btn-block" onclick="calculate()">Calculate</button>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+
+      <div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="results" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">Results</h4>
+            </div>
+            <div class="modal-body">
+              <p id="rightSphereResults"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- end of container -->
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calculations.js"></script>
+  </body>
+</html>
